@@ -39,7 +39,7 @@ public class FlinkWindowSourceFunction implements SourceFunction<TupleValue> {
 
 	public static String rowKeySalter(String rowKey) {
 		String padRowKey = StringUtils.leftPad(rowKey, 19, "0");
-		String salt = Hashing.murmur3_32().hashString(padRowKey, Charset.()).toString();
+		String salt = Hashing.murmur3_32().hashString(padRowKey, Charset.defaultCharset()).toString();
 		if (salt.length() > 8) {
 			salt = salt.substring(salt.length() - 8);
 		}
