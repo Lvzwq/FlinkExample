@@ -7,6 +7,7 @@ FlinkExample.iml
 
 FlinkTimeOut/dependency-reduced-pom.xml
 FlinkTimeOut/FlinkTimeOut.iml
+FlinkWindow/FlinkWindow.iml
 .idea/
 
 # Log file
